@@ -1,5 +1,7 @@
 # Dioxus Gloo Web Worker Example
 
+[Chinese / 中文](#dioxus-gloo-web-worker-示例)
+
 This is a minimal example of a Dioxus app using [gloo-worker](https://crates.io/crates/gloo-worker). It demonstrates how to configure a Dioxus project to support WebAssembly using a Gloo Web Worker.
 
 This example uses the oneshot macro from gloo-worker to create a Worker instance. Other methods of creating a Gloo Worker can be set up in a similar way. This example is based on Dioxus 0.6.
