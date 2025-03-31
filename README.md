@@ -20,7 +20,7 @@ Run the following command in the root of your project to start developing with t
 dx serve
 ```
 
-# dioxus gloo Web Worker 示例
+# Dioxus Gloo Web Worker 示例
 
 这是一个在 Dioxus 中使用 [gloo-worker](https://crates.io/crates/gloo-worker) 的最小示例。它演示了如何在 Dioxus 项目中配置支持 WebAssembly 的 Gloo Web Worker。
 
