@@ -1,0 +1,32 @@
+[package]
+authors = ["Flightless <pelapi@qq.com>"]
+edition = "2021"
+name = "dioxus-gloo-worker-example"
+description = "A minimal example of using dioxus with gloo-worker"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = {version = "0.6.3", features = []}
+gloo-worker = {version = "0.5.0", features = ["futures"]}
+wasm-bindgen = "0.2.100"
+wasm-bindgen-futures = "0.4.50"
+
+[features]
+default = ["web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]
+web = ["dioxus/web"]
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"
